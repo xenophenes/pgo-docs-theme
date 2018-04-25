@@ -234,8 +234,8 @@ th {
       flex: 0 100%; } }
 
 .content {
-  margin: 0.625rem;
-  padding: 0.938rem; }
+  margin: 0 0.625rem;
+  padding: 0 0.938rem; }
 
 @media only all and (max-width: 47.938em) {
   body [class*="size-"] {
@@ -510,7 +510,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; }
 
 h1 {
-  font-size: 3.25rem; }
+  font-size: 2.5rem; }
 
 h2 {
   font-size: 2.55rem; }

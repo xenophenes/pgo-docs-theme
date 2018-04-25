@@ -4,7 +4,7 @@
 	If you would like to explore this CSS,
 	use source map feature of your browser.
  */
-@font-face {
+/*@font-face {
   font-family: 'Novacento Sans Wide';
   src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot");
   src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-UltraLight-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-UltraLight-webfont.svg#novecento_sans_wideultralight") format("svg");
@@ -20,6 +20,21 @@
   font-style: normal;
   font-weight: 700;
   src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-Bold.woff2) format("woff2"), url(../fonts/Lato-Bold.ttf) format("truetype"); }
+*/
+@font-face {
+  font-family: 'IBM+Plex+Sans';
+  src: url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+  font-style: normal; }
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css?family=Source+Sans+Pro'); }
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.googleapis.com/css?family=Source+Sans+Pro'); }
 /* Table of contents */
 .progress ul {
   list-style: none;
@@ -271,28 +286,29 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   line-height: 110% !important;
   margin: 2.5rem 0 1.5rem 0;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  color: #323232 !important }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 110% !important;
   margin: 2rem 0 1rem 0; }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 110% !important;
   margin: 1.5rem 0 0.75rem 0; }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.5rem;
   line-height: 110% !important;
   margin: 1rem 0 0.2rem 0; }
 
 h6 {
-  font-size: 0.5rem;
+  font-size: 0.3rem;
   line-height: 110% !important;
   margin: 0.5rem 0 0.2rem 0; }
 
@@ -496,7 +512,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
   border: 1px solid #ccc; }
 
 #body .padding {
-  padding: 1rem 4rem; }
+  padding: 1rem 15rem; }
 
 #body h1 + hr {
   margin-top: -1.7rem;
@@ -531,6 +547,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
   right: 0; }
 
 #body-inner {
+  margin-top: 3rem;
   margin-bottom: 5rem; }
 
 #chapter {
@@ -568,8 +585,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 body {
   font-family: "Lato", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: normal;
-  line-height: 1.6;
-  font-size: 18px !important; }
+  line-height: 1.6; }
   body strong {
     font-family: "Lato Bold", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: bold; }
@@ -578,14 +594,11 @@ h2, h3, h4, h5, h6 {
   font-family: "Lato", "Work Sans Bold", "Helvetica Bold", "Tahoma Bold", "Geneva Bold", "Arial Bold", sans-serif;
   text-rendering: optimizeLegibility;
   color: #5e5e5e;
-  font-weight: 400;
-  letter-spacing: -1px; }
+  font-weight: 400; }
 
 h1 {
-  font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   text-align: center;
-  text-transform: uppercase;
-  color: #060606;
   font-weight: 200; }
 
 blockquote {
@@ -682,7 +695,6 @@ code + .copy-to-clipboard {
 
 pre {
   padding: 1rem;
-  margin: 2rem 0;
   border: 1px solid #272a2c;
   border-radius: 2px;
   line-height: 1.15; }
@@ -1013,7 +1025,6 @@ td {
 #top-bar {
   background: #f7f7f7;
   border-radius: 2px;
-  margin: 0rem -1rem 2rem;
   padding: 0 1rem;
   height: 0;
   min-height: 3rem; }
@@ -1181,7 +1192,7 @@ pre .copy-to-clipboard:hover {
     #sidebar ul.searched .search-match a:hover {
       color: #fff; }
     #sidebar ul.topics {
-      margin: 0 0 0 1rem; }
+      margin: 1.5rem 0 0 1rem; }
     #sidebar ul.topics.searched ul {
       display: block; }
     #sidebar ul.topics ul {
@@ -1205,7 +1216,8 @@ pre .copy-to-clipboard:hover {
       -webkit-transition: color 0.15s ease;
       -moz-transition: color 0.15s ease;
       -ms-transition: color 0.15s ease;
-      transition: color 0.15s ease; }
+      transition: color 0.15s ease;
+      padding-left: 0.5rem; }
     #sidebar ul.topics > li.parent a:hover, #sidebar ul.topics > li.active a:hover {
       color: #e6e6e6;
       -webkit-transition: color 0.15s ease;
@@ -1221,7 +1233,6 @@ pre .copy-to-clipboard:hover {
     #sidebar ul li.active > div > a {
       background: white;
       color: gray !important;
-      padding-left: 1rem;
       padding-right: 0rem; }
     #sidebar ul li.active > div > a:hover {
       color: #b5b5b5 !important;
@@ -1240,8 +1251,7 @@ pre .copy-to-clipboard:hover {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
-      display: block;
-      width: calc(100% - 20px); }
+      display: block; }
     #sidebar ul li > div > a {
       padding: 2px 0;
       position: relative; }
@@ -1276,7 +1286,7 @@ pre .copy-to-clipboard:hover {
     display: inline;
     font-weight: 100; }
   #sidebar #shortcuts h3 {
-    font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    font-family: 'Lato', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
     color: #fff; }
 
 /*
